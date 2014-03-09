@@ -4,8 +4,8 @@ import flask
 app = flask.Flask(__name__)
 
 @app.route("/")
-def hello():
-    return flask.render_template_string(open("index.html").read())
+def divvyviz():
+    return flask.render_template("index.html")
 
 
 if __name__ == "__main__":
