@@ -18,6 +18,7 @@
 	margin: auto auto 1em auto;
 	position: relative;
 }
+
 .scianimator .controls,
 .scianimator .control {
 	border: 1px solid;
@@ -25,7 +26,7 @@
 	-moz-border-radius: 4px;
 	font-family: 'Lucida Grande', sans-serif;
 	font-size: 10px;
-	text-shadow: 0 1px #fff;	
+	text-shadow: 0 1px #fff;
 	margin: 2px;
 	position: relative;
 }
@@ -74,19 +75,19 @@
 	margin: 2px;
 	padding: 0;
 	width: 10px;
-	
+
 	background: #00FF00;
 	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
 	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
-	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;	
-	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;	
+	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
+	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
 }
 .scianimator .box a.navigator.disabled,
 .scianimator .box a:hover.navigator.disabled {
 	background: red;
 	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px red;
 	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px red;
-	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px red;	
+	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px red;
 	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px red;
 }
 .scianimator .box a.navigator.current,
@@ -94,7 +95,7 @@
 	background: blue;
 	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
 	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
-	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;	
+	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
 	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
 }
 

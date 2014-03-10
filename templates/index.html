@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="static/css/scianimator.css" />
 	<link rel="stylesheet" href="static/css/shCore.css" />
 	<link rel="stylesheet" href="static/css/shThemeDefault.css" />
+	<link rel="stylesheet" href="static/css/navbar.css" />
 
 	<script src="static/js/jquery-1.4.4.min.js"></script>
 	<script src="static/js/jquery.scianimator.min.js"></script>
@@ -16,16 +17,36 @@
 
 </head>
 <body>
-	<div class="scianimator"><div id="Rplot" style="display: inline-block;"></div></div>
-	<script src="static/js/Rplot.js"></script>
-<!-- highlight R code -->
-<script type="text/javascript">
-	SyntaxHighlighter.autoloader(
-	  "r    static/js/shBrushR.js"
-	);
-	SyntaxHighlighter.defaults["toolbar"] = false;
-	SyntaxHighlighter.all();
-</script>
+  <div class="navbar">
+    <ul>
+      <li><a href="https://github.com/asippel89/divvyviz">Frontend</a></li>
+      <li><a href="#analysis">Analysis</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+  <div class="scianimator">
+    <div id="Rplot_to_wkday" style="display: inline-block; float: left; margin-left: 200px"></div>
+  </div>
+  <script src="static/js/Rplot_to_wkday.js"></script>
+
+  <div class="scianimator">
+    <div id="Rplot_fr_wkday" style="display: inline-block; float: right; margin-right: 200px"></div>
+  </div>
+  <script src="static/js/Rplot_fr_wkday.js"></script>
+
+  <br>
+  <br>
+
+  <div class="scianimator">
+    <div id="Rplot_to_wkend" style="display: inline-block; float: right; margin-right: 200px"></div>
+  </div>
+  <script src="static/js/Rplot_to_wkend.js"></script>
+
+  <div class="scianimator">
+    <div id="Rplot_fr_wkend" style="display: inline-block; float: right; margin-right: 200px"></div>
+  </div>
+  <script src="static/js/Rplot_fr_wkend.js"></script>
 
 </body>
 </html>
