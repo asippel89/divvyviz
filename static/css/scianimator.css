@@ -26,6 +26,7 @@
 	-moz-border-radius: 4px;
 	font-family: 'Lucida Grande', sans-serif;
 	font-size: 10px;
+	text-align: center;
 	text-shadow: 0 1px #fff;
 	margin: 2px;
 	position: relative;
@@ -66,6 +67,9 @@
 
 .scianimator .box.control.navigator {
 	padding: 2px;
+	display: block;
+	margin-left: 19em;
+	margin-right: 19em;
 }
 
 .scianimator .box a.control.navigator,
@@ -76,11 +80,11 @@
 	padding: 0;
 	width: 10px;
 
-	background: #00FF00;
-	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
-	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
-	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
-	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #00FF00;
+	background: #B2B2FF;
+	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #B2B2FF;
+	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #B2B2FF;
+	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #B2B2FF;
+	-moz-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px #B2B2FF;
 }
 .scianimator .box a.navigator.disabled,
 .scianimator .box a:hover.navigator.disabled {
@@ -92,7 +96,7 @@
 }
 .scianimator .box a.navigator.current,
 .scianimator .box a:hover.navigator.current {
-	background: blue;
+	background: white;
 	box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
 	-o-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
 	-webkit-box-shadow: 0 0 3px 1px #666666 inset, 0 0 1px blue;
