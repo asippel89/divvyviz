@@ -11,6 +11,10 @@ def divvyviz():
 def render_large_weekday():
     return flask.render_template("large_wkday.html")
 
+@app.route("/wkend")
+def render_large_weekend():
+    return flask.render_template("large_wkend.html")
+
 
 if __name__ == "__main__":
 
