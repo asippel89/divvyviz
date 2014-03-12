@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="static/css/reset.css" />
 	<link rel="stylesheet" href="static/css/styles.css" />
 	<link rel="stylesheet" href="static/css/scianimator.css" />
-	<link rel="stylesheet" href="static/css/navbar.css" />
 	<link rel="stylesheet" href="static/css/wkday_hotarea.css" />
 
 	<script src="static/js/jquery-1.4.4.min.js"></script>
@@ -14,24 +13,13 @@
 
 </head>
 <body>
-  <div class="navbar">
-    <ul>
-      <li><a href="https://github.com/asippel89/divvyviz">Frontend</a></li>
-      <li><a href="#analysis">Analysis</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </div>
-
   <div class="words">
     <div class="scianimator">
       <div id="Rplot_wkday_small" style="display: inline-block;"></div>
     </div>
     <script src="static/js/Rplot_wkday_small.js"></script>
-    <p>Here are some words to describe the stuff here.
-      More words lorem ipsum lorem ipsum lorem ipsum lorem ipsum iprem lorsum.</p>
-    <p> More words. </p>
+    <p>This is Divvy usage by hour on weekdays shown as heatmaps of most popular stations.  In green on the left is the heatmap for most popular stations to arrive at.  In purple on the right is the heatmap for most popular stations to depart from.  As you would expect, usage is very high during AM and PM rush hours, mainly reflecting commuters coming and going from work in the Loop.  Interestingly, there is also a lot of Divvy traffic passing through but not necessarily stopping inside the Loop from people who use Divvy to travel between public transit stations downtown.  We go into this by looking at AM rush hour hotspots a bit more in depth below.  </p>
     <br>
-    <p>It's really sweet, I mean look at those plots go!</p>
     <p>Actually if you want a link to the larger version of this animation, go <a href="/wkday">here!</a></p>
   </div>
 
@@ -42,12 +30,19 @@
       <div id="Rplot_wkend_small" style="display: inline-block;"></div>
     </div>
     <script src="static/js/Rplot_wkend_small.js"></script>
-    <p>This is the weekend Divvy traffic. As you can see, it's different from the one above in ways you'd expect.</p>
-    <p> But also there's this cool feature at about 5pm around _____. </p>
+    <p>This is Divvy usage by hour on weekends.  As expected, most Divvyers on the weekend are leisure riders or tourists.  This is reflected in the location of the most popular hot spots.  The area around Millennium Station and Michigan Ave is very popular, as well as Navy Pier and Oak Street Beach.  Less popular but still warm spots are Lincoln Park Zoo/North Beach and Museum Campus. What's interesting is that you can see 'who' (or rather which trips) are likely the riders going on leisurely bike rides, and who are the tourists using Divvy to travel to tourist spots by looking at hotspot destinations and where people most commonly come from.  For instance, the station at Oak Street Beach (Michigan Ave & Oak St) is most popular with Divvyers who checked out bikes at the same station - most likely leisure riders returning from a nice lakefront bike ride.  </p>
     <br>
     <p>For a larger version of the animation, go <a href="/wkend">here!</a></p>
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+
+  <div class="words">
+    <h1 style="text-align: center; font-family: arial">Weekday AM Rush Hour Analysis</h1>
+    <br>
+    <p>Hover over the green hotspots to see the depature stations. The larger the yellow spot, the more departures from that station to the selected hotspot.</p>
+    <br>
+
+  </div>
 
   <div class="text">
     <div id="wkday_hotarea_container" style="float: left">
@@ -109,7 +104,7 @@
 
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
 
     <div class="text">
       <div id="wkday_hotarea_container9" style="float: left">
@@ -129,9 +124,16 @@
     </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br>
-
+    <div class="conclusion" style="font-family: arial; margin-left: 200px; margin-right: 200px; text-align: center">
+      <h1>Conclusion</h1>
+      <br>
     <p>Divvy looks like it's been very useful for people trying to smooth out their work commutes, especially in making public transit connections that are otherwise awkward or inefficient.  For instance, the transfer from Millennium Station to Union Station, or avoiding looping around the Loop to get around downtown Chicago.This is just a conclusion drawn from looking at weekday AM rush period Divvy trips. Other time periods should be just as interesting</p>
 
+    <br>
+    <p>The code for this webapp is available <a href="https://github.com/asippel89/divvyviz">here</a>. The code used to generate the plots was done in R and will also be available online soon.
+    </p>
+
+    </div>
 
     <script>
       $('#westloop').hover(
